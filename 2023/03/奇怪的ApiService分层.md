@@ -131,6 +131,6 @@ public interface bApiClient extends bApiService{
 再一想又是无奈，确实可能是研发要面向简历编程，给自己增加微服务经验。
 也不排除是研发也没有话语权，被产品吹牛逼裹挟着做微服务重构，也不可知。
 
-关于[Service与Dao的那些事](Service与Dao的那些事.md)，我还有些话想说。
+关于Service与Dao的那些事，如[aService直接调用bDao合适吗？](aService直接调用bDao合适吗？.md)，我还有些话想说。
 
 
