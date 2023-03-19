@@ -70,7 +70,7 @@ OrderController、OrderItemController、OrderService、OrderItemService
 典型的面向数据库编程就是这样，不需要管需求是什么，不管有没有需要，
 直接照着数据库表设计就用代码生成器生成一堆没用的垃圾代码。
 
-在这样的背景下，才会有人说出`自己的Dao只需要自己的Service调用`这种话。  
+在这样的背景下，才会有人说出`自己的Dao只能被自己的Service调用`这种话。  
 aService不能直接调用bDao，bDao只能被自己的bService调用。  
 大哥，哪来的`自己的Servcie`这么一个说法？
 
