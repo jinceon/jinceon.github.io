@@ -16,10 +16,10 @@ PS：我个人是非常讨厌代码生成器的。
 
 这里不多说，先来看一个具体的问题，也是本文想讨论的问题。
 
-## 问题
+## 问题1
 aService应该直接调用bDao，还是aService调用bService再由bService调用bDao？
 
-## 案例
+## 案例1
 假设有一个订单列表页，每个订单里可以包含多个商品。
 
 显然大家无需思考就可以建出2个表来：订单表(order)和订单商品项表(order_item)。
@@ -33,7 +33,7 @@ OrderController、OrderItemController、OrderService、OrderItemService
 
 打住。先停下来。好好想想，这里有没有问题？
 
-## 思考
+## 思考1
 大家有没有发现，其实这一步根本就没关注需求。
 似乎建好表后照着表一一对应建立相应的controller、service、dao绝对是天经地义的事。
 
@@ -90,7 +90,51 @@ aService不能直接调用bDao，bDao只能被自己的bService调用。
 
 不滑稽吗？
 
-## 结论
+## 结论1
 Service是写业务逻辑的地方。使用了2个不同的Dao不代表这是2个业务。  
 在一个Service里调用2个Dao是毫无问题的。  
 反而在aServcie先调用bService再由bService调用bDao是很奇怪的事。
+
+## 质疑
+这例子似乎太简单了。
+
+bService里没有其他逻辑，仅调用了bDao，所以可以改成直接在aService里调用bDao。  
+那如果bService里除了调用bDao外还有其他逻辑呢？也不能调用bService吗？  
+是不是会出现aService里既引入bService又引入bDao的情况？
+
+先来明确一个原则。  
+Controller调用Service，Service调用Dao。  
+Controller绝不允许调用Controller，Dao绝不允许调用Dao。  
+Service慎重调用Service。
+
+如果你真的有需要，在Service里调用Service也是可以的。
+
+但是建议先思考，这是否是必须的？
+
+## 案例2
+
+信用卡新卡申请的时候，有新用户自主申请、、新用户邀请申请等。  
+如果是邀请申请，那么邀请人也会获得活动奖励。
+
+我相信不少同学会这样写代码。
+
+```java
+public class CardService{
+
+    private BonusService bonusService;
+
+    public void register(ApplyForm form){
+      // some logic
+      if(form.isInvited()){
+          // 填写了邀请码
+          bonusService.pay();//给邀请人发奖励
+      }
+    }
+}
+```
+先想想，这里有没有问题？
+
+## 问题2
+非得在 CardService 里调用 BonusService吗？
+
+## 思考2
