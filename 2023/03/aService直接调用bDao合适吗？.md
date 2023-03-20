@@ -138,3 +138,46 @@ public class CardService{
 非得在 CardService 里调用 BonusService吗？
 
 ## 思考2
+做法1：事件解耦。  
+邀请奖励和新卡申请其实是2个业务。完全可以通过事件解耦。  
+伪代码参考如下：
+
+```java
+public class CardService{
+
+    private BonusService bonusService;
+
+    public void register(ApplyForm form){
+      // some logic
+      publishEvent(xxxx); //用spring的事件或mq等均可
+    }
+}
+
+public class RegisterEventListener {
+    public void onRegister(xxxx){
+        if(xxxx.isInvited()){
+          // 填写了邀请码
+          bonusService.pay();//给邀请人发奖励
+      }
+    }
+}
+```
+
+做法2：对于那些有业务关联的逻辑，也可以额外抽一个Service。
+
+```java
+public class RegisterService{
+
+    private CardService cardService;
+    private BonusService bonusService;
+    
+    public void register(ApplyForm form){
+        cardService.register(form);
+        bonus.pay();
+    }
+}
+```
+如果想用pmd等自定义规则来校验，绝对禁止Service里调用Service，可以将这种包含多个Service调用的类统一一个新的命名，
+举例叫 *ServiceManager，如 RegisterServiceManager 。  
+
+关于自定义pmd规则，可以看看我的另外一个Demo项目[simple-code-checker](https://gitee.com/jinceon/simple-code-checker)。
