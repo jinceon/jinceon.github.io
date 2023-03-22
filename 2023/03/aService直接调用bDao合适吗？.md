@@ -95,6 +95,18 @@ Service是写业务逻辑的地方。使用了2个不同的Dao不代表这是2�
 在一个Service里调用2个Dao是毫无问题的。  
 反而在aServcie先调用bService再由bService调用bDao是很奇怪的事。
 
+Controller是贴近用户的，更接近业务的抽象（什么人要做什么事）；  
+Dao是远离用户的，是技术的抽象；  
+而Service就是两个抽象的粘合（转换）层。
+
+所以如果你就是单纯的做个CRUD管理系统，不然不会出现xxEntity、xxDao、xxService、xxController一条龙顺过去。  
+
+我一向讨厌代码生成器，是因为我觉得代码生成器最多生成xxEntity、xxDao，  
+Controller和Service几乎不可能是通用的。
+
+如果Controller和Service都能通用，那你也不需要生成，因为能靠生成的代码都是重复的，大可以再抽象一层，  
+而这类抽象已经有了，比如 Spring Data Rest。
+
 ## 质疑
 这例子似乎太简单了。
 
