@@ -404,3 +404,10 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+ul.posts {
+ max-width: 600px;
+}
+ul.posts .pull-right {
+    float: right;
+}
