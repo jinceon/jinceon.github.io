@@ -32,8 +32,7 @@ enableGiscus = true
 # Twitter Card and Open Graph settings
 enableOpenGraph = true
 enableTwitterCards = true
-title = "My Blog" # will set 'og:site_name'
-description = "My HomePage Description"  # will set 'og:description'
+description = "工作的乐趣在于折腾。对一些问题、思考的随手记录"  # will set 'og:description'
 
 [params.gitalk]
 owner = "user"
