@@ -2,8 +2,8 @@
 title = "我讨厌http状态码一律200"
 date = "2023-03-17T15:58:45.0524755Z"
 Description = ""
-Tags = ["Development", "Java"]
-Categories = ["Development", "Java"]
+Tags = ["Java"]
+Categories = ["程序设计"]
 
 +++
 昨晚在知乎偶然刷到个月经贴（月月有人问，年年有人愁）

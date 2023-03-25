@@ -2,8 +2,8 @@
 title = "api返回错误详情不香吗？"
 date = "2023-03-25T02:07:45.9836312Z"
 Description = ""
-Tags = ["Development", "Java"]
-Categories = ["Development", "Java"]
+Tags = [ "Java"]
+Categories = ["程序设计"]
 
 +++
 ## 背景

@@ -2,8 +2,8 @@
 title = "生不逢时的vo、po、dto"
 date = "2023-03-24T13:07:42.6562197Z"
 Description = ""
-Tags = ["Development", "Java"]
-Categories = ["Development", "Java"]
+Tags = ["Java"]
+Categories = ["程序设计"]
 
 +++
 ## 案例

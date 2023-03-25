@@ -2,8 +2,8 @@
 title = "MyBatis-Plus里糟糕的IService设计"
 date = "2023-03-24T14:36:20.8795811Z"
 Description = ""
-Tags = ["Development", "Java"]
-Categories = ["Development", "Java"]
+Tags = ["Java"]
+Categories = ["程序开发"]
 
 +++
 我实在搞不懂，在已经有了BaseMapper后，为什么还要再整出一个 IService ?

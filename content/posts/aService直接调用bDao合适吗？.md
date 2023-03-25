@@ -2,8 +2,8 @@
 title = "aService直接调用bDao合适吗？"
 date = "2023-03-24T13:07:42.6615286Z"
 Description = ""
-Tags = ["Development", "Java"]
-Categories = ["Development", "Java"]
+Tags = ["Java"]
+Categories = ["程序开发"]
 
 +++
 ## 背景
