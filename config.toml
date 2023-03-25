@@ -1,5 +1,5 @@
 title = "JinCeon随笔"
-baseURL = "/"
+baseURL = "https://jinceon.github.io/"
 # 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]

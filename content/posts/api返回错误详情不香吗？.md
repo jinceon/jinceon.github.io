@@ -1,6 +1,6 @@
 +++
 title = "api返回错误详情不香吗？"
-date = "2023-03-25T02:07:45.9836312Z"
+date = "2023-03-25"
 Description = ""
 Tags = [ "Java"]
 Categories = ["程序设计"]

@@ -1,6 +1,6 @@
 +++
 title = "MyBatis-Plus里糟糕的IService设计"
-date = "2023-03-24T14:36:20.8795811Z"
+date = "2023-03-24"
 Description = ""
 Tags = ["Java"]
 Categories = ["程序开发"]
