@@ -51,7 +51,7 @@ OrderController、OrderItemController、OrderService、OrderItemService
 ```
 但这2个api都归在OrderController里，不比拆成OrderController和OrderItemController香？
 
-![订单列表页截图](/images/order_list.jpg)
+![订单列表页截图](images/order_list.jpg)
 
 如果UI是这样设计，在列表页就需要将订单商品全部展示出来，甚至会设计成一个api。
 
