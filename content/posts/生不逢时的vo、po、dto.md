@@ -10,7 +10,7 @@ Categories = ["Development", "Java"]
 某项目采用微服务架构，将系统切分成大量微服务，服务间通过feign调用。  
 为了方便调用方，无需多个调用方各自去生成客户端代码，API提供方在实现接口的时候同时提出FeignClient定义。  
 见下图，其中`*-service`是api实现，`*-api`则是FeignClient定义。
-![模块依赖示例](images/bad.png)
+![模块依赖示例](/images/bad.png)
 
 至于`*-model`里是什么呢？  
 是各种vo、dto、entity、mybatis的mapper定义等。  
@@ -27,7 +27,7 @@ Categories = ["Development", "Java"]
 
 但是，在微服务越来越火的现在，模块划分越来越细（先不讨论划分合不合理），代码共享在互相依赖的情况下，就带来了很大的麻烦了。  
 这时严格区分vo、po、dto绝对是成本小，收益大。  
-![改进示例](images/good.png)
+![改进示例](/images/good.png)
 
 感觉vo、po、dto等是非常好的解耦设计，但是可惜生不逢时。  
 大家以前用了，但帮助不大，反而对它产生了一些负面情绪。  
