@@ -1,4 +1,11 @@
-# 面向UI编程？
++++
+title = "面向UI编程？"
+date = "2023-03-05T03:11:14.5845377Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 ## 背景
 前两天团队内在做数据库设计评审，其中有个数据库表对应的UI类似下面：
 

@@ -1,4 +1,11 @@
-# aService直接调用bDao合适吗？
++++
+title = "aService直接调用bDao合适吗？"
+date = "2023-03-24T13:07:42.6615286Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 ## 背景
 做Web开发写CRUD的Java程序员，Controller、Service、Dao是耳熟能详，天天写代码也是写这些东西。
 

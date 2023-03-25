@@ -1,4 +1,11 @@
-# 奇怪的ApService分层
++++
+title = "奇怪的ApService分层"
+date = "2023-03-19T09:03:39.2232536Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 ## 故事
 在JavaWeb开发里，Controller、Service、Dao(Mapper)的分层大家都耳熟能详了。
 
@@ -132,5 +139,4 @@ public interface bApiClient extends bApiService{
 也不排除是研发也没有话语权，被产品吹牛逼裹挟着做微服务重构，也不可知。
 
 关于Service与Dao的那些事，如[aService直接调用bDao合适吗？](aService直接调用bDao合适吗？.md)，我还有些话想说。
-
 

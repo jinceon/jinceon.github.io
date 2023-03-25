@@ -1,4 +1,11 @@
-# 生不逢时的vo、po、dto
++++
+title = "生不逢时的vo、po、dto"
+date = "2023-03-24T13:07:42.6562197Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 ## 案例
 某项目采用微服务架构，将系统切分成大量微服务，服务间通过feign调用。  
 为了方便调用方，无需多个调用方各自去生成客户端代码，API提供方在实现接口的时候同时提出FeignClient定义。  

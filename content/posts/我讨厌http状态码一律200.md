@@ -1,4 +1,11 @@
-# 我讨厌http状态码一律200
++++
+title = "我讨厌http状态码一律200"
+date = "2023-03-17T15:58:45.0524755Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 昨晚在知乎偶然刷到个月经贴（月月有人问，年年有人愁）
 
 [为什么那么多公司做前后端分离项目后端响应的 HTTP 状态一律 200？](https://www.zhihu.com/question/513865370/answer/2939847024)

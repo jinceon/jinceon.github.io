@@ -1,4 +1,11 @@
-# api返回错误详情不香吗？
++++
+title = "api返回错误详情不香吗？"
+date = "2023-03-25T02:07:45.9836312Z"
+Description = ""
+Tags = ["Development", "Java"]
+Categories = ["Development", "Java"]
+
++++
 ## 背景
 看到公司一个项目里，网关层把controller抛出的异常消息都吃了，统一只给客户端返回
 ```json5
