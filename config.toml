@@ -35,6 +35,8 @@ enableTwitterCards = true
 description = "工作的乐趣在于折腾。对一些问题、思考的随手记录"  # will set 'og:description'
 
 enableGitInfo = true
+[frontmatter]
+lastmod = ['lastmod', ':fileModTime', ':default']
 
 [params.gitalk]
 owner = "user"
