@@ -1,6 +1,7 @@
 +++
 title = "奇怪的ApService分层"
-date = "2023-03-19"
+date = "2023-03-18"
+
 Description = ""
 Tags = ["Java"]
 Categories = ["程序设计"]
@@ -139,4 +140,3 @@ public interface bApiClient extends bApiService{
 也不排除是研发也没有话语权，被产品吹牛逼裹挟着做微服务重构，也不可知。
 
 关于Service与Dao的那些事，如[aService直接调用bDao合适吗？](aService直接调用bDao合适吗？.md)，我还有些话想说。
-

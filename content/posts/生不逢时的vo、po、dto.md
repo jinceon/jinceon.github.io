@@ -1,6 +1,7 @@
 +++
 title = "生不逢时的vo、po、dto"
-date = "2023-03-24"
+date = "2023-03-05"
+
 Description = ""
 Tags = ["Java"]
 Categories = ["程序设计"]

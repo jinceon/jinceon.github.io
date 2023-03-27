@@ -34,6 +34,8 @@ enableOpenGraph = true
 enableTwitterCards = true
 description = "工作的乐趣在于折腾。对一些问题、思考的随手记录"  # will set 'og:description'
 
+enableGitInfo = true
+
 [params.gitalk]
 owner = "user"
 repo = "repo name"
