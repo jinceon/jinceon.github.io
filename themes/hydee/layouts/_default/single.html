@@ -7,11 +7,16 @@
 	</div>
 	{{ .Content }}
 	<div>
-	  <p style="border-top:1px solid #eeeeee;padding-top:1rem;">如果你觉得本文对你有帮助或不错，可略表心意，<span style="color:#f44336">请我喝一杯咖啡。 </span>☕</p>
+	  <p style="border-top:1px solid #eeeeee;padding-top:1rem;">如果你觉得本文对你有帮助或不错，可略表心意，<span style="color:#f44336">请我喝一杯冰可乐。 </span>☕</p>
 	  <img src="/pay.jpg"></img>
 	</div>
 </div>
-
+{{ if .Page.Store.Get "hasMermaid" }}
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({ startOnLoad: true });
+</script>
+{{ end }}
 
 <h2>Comments</h2>
 {{ partial "comment.html" . }}
