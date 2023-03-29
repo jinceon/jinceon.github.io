@@ -327,6 +327,32 @@ tbody tr:nth-child(odd) th {
   color: #757575;
   border-bottom:1px solid #eeeeee;
 }
+.post-tags, .post-categories {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #757575;
+}
+
+.post-tag {
+  background-color: #ecf5ff;
+  color: #409eff;
+}
+.post-category {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  color: #67c23a;
+}
+
+.post-terms span {
+  display: inline-block;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 30px;
+  border: 1px solid #d9ecff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
 
 /* Related posts */
 .related {
