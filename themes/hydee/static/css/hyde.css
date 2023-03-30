@@ -77,11 +77,13 @@ html {
 	}
 }
 
+
 /* Sidebar links */
 .sidebar a {
 	color: #fff;
 	text-decoration: none;
 	display: block;
+	padding-inline: 10px;
 }
 
 /* About section */
@@ -100,12 +102,16 @@ html {
 }
 
 .sidebar-nav-item {
-	display: block;
-	line-height: 1.75;
-	border-top: 1px solid;
-	cursor: pointer;
+    line-height: 1.75;
+    border-top: 1px solid;
+    cursor: pointer;
 }
-
+@media(max-width: 48em) {
+    .sidebar-nav-item {
+        display: inline-block;
+        border-top: none;
+    }
+}
 nav+p {
 	border-top: 1px solid;
 	padding-top: 20px;
