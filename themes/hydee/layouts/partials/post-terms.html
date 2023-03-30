@@ -1,0 +1,12 @@
+<div class="post-terms">
+    <div class="post-categories">Categories:
+        {{ range .Params.categories -}}
+        <a href="{{ print "/categories/" (lower .) }}"><span class="post-category">{{ . }}</span></a>
+        {{ end }}
+    </div>
+    <div class="post-tags">Tags:
+        {{ range .Params.tags -}}
+        <a href="{{ print "/tags/" (lower .) }}"><span class="post-tag">{{ . }}</span></a>
+        {{ end }}
+    </div>
+</div>
