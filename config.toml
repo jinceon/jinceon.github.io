@@ -6,7 +6,7 @@ defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 # 是否包括中日韩文字
 hasCJKLanguage = true
-
+enableGitInfo = true
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "hydee"
 copyright = "jinceon"
@@ -34,7 +34,7 @@ enableOpenGraph = true
 enableTwitterCards = true
 description = "工作的乐趣在于折腾。对一些问题、思考的随手记录"  # will set 'og:description'
 
-enableGitInfo = true
+
 [frontmatter]
 lastmod = [':git', 'lastmod', ':fileModTime', ':default']
 
