@@ -90,6 +90,6 @@ mybatis-plus也是这样。你爱这样写service，那我就给你个iservice�
 
 有兴趣的可以参看我另外两篇文章
 
-[不该用的代码生成器](不该用的代码生成器.md)
+[不该用的代码生成器](/posts/不该用的代码生成器.md)
 
-[aService直接调用bDao合适吗？](aService直接调用bDao合适吗？)
+[aService直接调用bDao合适吗？](/posts/aService直接调用bDao合适吗？)
